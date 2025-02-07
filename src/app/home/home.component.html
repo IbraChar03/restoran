@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="home">
+    <div class="container">
+        <div class="container-hero">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Enjoy Our Delicious Meal</h1>
+                    <p>
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                        diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore
+                        erat
+                        amet.
+                    </p>
+                    <button>Book a Table</button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/img/hero.png"
+                        alt="Delicious grilled food">
+                </div>
+            </section>
+        </div>
+        <section class="services-section">
+            <app-service *ngFor="let service of services"
+                [title]="service.title"
+                [description]="service.description"
+                [icon]="service.icon"></app-service>
+        </section>
+        <app-about></app-about>
+        <app-menu></app-menu>
+    </div>
+</div>

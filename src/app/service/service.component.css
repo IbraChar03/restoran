@@ -1,0 +1,33 @@
+.service-card {
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+}
+
+.image {
+    height: 35%;
+    width: 100%;
+}
+
+.image i {
+    color: orange;
+    font-size: 60px;
+}
+
+.title {
+    height: 25%;
+    width: 100%;
+    font-size: 28px;
+    color: #111725;
+    font-weight: 500;
+
+}
+
+.desc {
+    height: 40%;
+    width: 100%;
+    font-size: 20px;
+    color: #626262;
+
+}
