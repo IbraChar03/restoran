@@ -1,0 +1,62 @@
+.testimonials {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.carousel-cards {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.testimonial-text {
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+}
+
+span {
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dots {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 240px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: orange;
+}

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -15,6 +17,7 @@ import { TeamComponent } from './team/team.component';
 import { ChefCardComponent } from './chef-card/chef-card.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

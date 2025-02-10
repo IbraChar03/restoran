@@ -1,1 +1,22 @@
-<p>testimonials works!</p>
+<section class="testimonials">
+    <div class="testimonial-text">
+        <span></span> Testimonial<span></span>
+    </div>
+    <div class="text">
+        Our Clients Say!!!
+    </div>
+
+    <div class="carousel-cards">
+        <app-testimonial-card *ngFor="let card of getVisibleCards()"
+            [title]="card.title"
+            [description]="card.description"></app-testimonial-card>
+    </div>
+
+    <div class="dots">
+        <span *ngFor="let dot of [].constructor(getDotsCount()); let i = index"
+            [class.active]="i === getActiveDotIndex()"
+            (click)="goToCards(i)"
+            class="dot"></span>
+    </div>
+
+</section>

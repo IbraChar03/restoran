@@ -1,0 +1,41 @@
+.card {
+    width: 380px;
+    height: 170px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+.icon {
+    width: 100%;
+    height: 30%;
+}
+
+.description {
+    width: 100%;
+    height: 30%;
+}
+
+.person {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+i {
+    color: orange;
+    font-size: 60px;
+}
+
+img {
+    width: 15%;
+    height: 75%;
+    border-radius: 50%;
+    object-fit: fill;
+    margin-right: 20px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
