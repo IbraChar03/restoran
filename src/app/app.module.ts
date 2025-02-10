@@ -10,6 +10,8 @@ import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
 import { FoodCardComponent } from './food-card/food-card.component';
+import { BookingComponent } from './booking/booking.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FoodCardComponent } from './food-card/food-card.component';
     ServiceComponent,
     AboutComponent,
     MenuComponent,
-    FoodCardComponent
+    FoodCardComponent,
+    BookingComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,

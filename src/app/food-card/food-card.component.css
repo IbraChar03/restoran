@@ -3,7 +3,6 @@
     align-items: center;
     background: white;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 8px;
 }
 
@@ -35,5 +34,5 @@
     font-size: 18px;
     color: orange;
     font-weight: bold;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }

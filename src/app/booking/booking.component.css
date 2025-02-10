@@ -1,0 +1,129 @@
+.booking {
+    width: 100%;
+    height: 520px;
+    display: flex;
+}
+
+.video {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 165, 0, 0.7);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button span {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.form-section {
+    width: 50%;
+    background: #0c1323;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    height: 85%;
+    width: 85%;
+}
+
+.form-container {
+    width: 85%;
+    background-color: #0c1323;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.reservation-title {
+    color: orange;
+    font-style: italic;
+    font-size: 1.2rem;
+    gap: 10px;
+}
+
+.reservation-title span {
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.main-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: white;
+}
+
+textarea {
+    width: 95%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: white;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    background: orange;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
