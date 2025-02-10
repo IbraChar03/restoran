@@ -12,6 +12,9 @@ import { MenuComponent } from './menu/menu.component';
 import { FoodCardComponent } from './food-card/food-card.component';
 import { BookingComponent } from './booking/booking.component';
 import { TeamComponent } from './team/team.component';
+import { ChefCardComponent } from './chef-card/chef-card.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { TeamComponent } from './team/team.component';
     MenuComponent,
     FoodCardComponent,
     BookingComponent,
-    TeamComponent
+    TeamComponent,
+    ChefCardComponent,
+    TestimonialsComponent,
+    TestimonialCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,9 @@
-<p>team works!</p>
+<div class="team-section">
+    <h3 class="team-title">Team Members</h3>
+    <h2 class="master-chef-title">Our Master Chefs</h2>
+
+    <div class="chef-grid">
+        <app-chef-card *ngFor="let chef of chefs"
+            [chef]="chef"></app-chef-card>
+    </div>
+</div>
