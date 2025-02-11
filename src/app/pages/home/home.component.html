@@ -1,4 +1,20 @@
-<app-navbar></app-navbar>
+<nav class="navbar">
+    <div class="logo">
+        <span class="icon">&#x1F374;</span> Restoran
+    </div>
+    <ul class="nav-links">
+        <div class="links">
+            <li *ngFor="let item of data">
+                <a [routerLink]="['/', item.path]"
+                    routerLinkActive="active">{{item.label}}</a>
+            </li>
+        </div>
+        <li>
+            <button class="cta">Book a Table</button>
+        </li>
+    </ul>
+
+</nav>
 <div class="home">
     <div class="container">
         <div class="container-hero">
@@ -30,5 +46,6 @@
         <app-booking></app-booking>
         <app-team></app-team>
         <app-testimonials></app-testimonials>
+        <app-footer></app-footer>
     </div>
 </div>

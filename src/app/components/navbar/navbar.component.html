@@ -1,0 +1,28 @@
+<section class="header-section">
+        <div class="container">
+                <div class="container-navbar">
+                        <nav class="navbar">
+                                <div class="logo">
+                                        <i class="fa-solid fa-utensils icon"></i> Restoran
+                                </div>
+                                <ul class="nav-links">
+                                        <div class="links">
+                                                <li *ngFor="let item of data">
+                                                        <a [routerLink]="['/', item.path]"
+                                                                routerLinkActive="active">{{item.label}}</a>
+                                                </li>
+                                        </div>
+                                        <li>
+                                                <button class="cta">Book a Table</button>
+                                        </li>
+                                </ul>
+
+                        </nav>
+                        <div class="title-container">
+                                <div class="title">{{pageTitle}}</div>
+                                <div class="path">Home / Pages / {{pagePath}}</div>
+                        </div>
+                </div>
+        </div>
+
+</section>

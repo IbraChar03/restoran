@@ -1,9 +1,9 @@
 .testimonials {
     width: 100%;
-    height: 600px;
     position: relative;
     overflow: hidden;
     margin-top: 50px;
+    height: 400px;
 }
 
 .carousel-cards {
@@ -42,7 +42,7 @@ span {
     text-align: center;
     position: absolute;
     width: 100%;
-    bottom: 240px;
+    bottom: 40px;
 }
 
 .dot {

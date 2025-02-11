@@ -5,19 +5,20 @@ import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { ServiceComponent } from './service/service.component';
-import { AboutComponent } from './about/about.component';
-import { MenuComponent } from './menu/menu.component';
-import { FoodCardComponent } from './food-card/food-card.component';
-import { BookingComponent } from './booking/booking.component';
-import { TeamComponent } from './team/team.component';
-import { ChefCardComponent } from './chef-card/chef-card.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
-
+import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ServiceComponent } from './components/service/service.component';
+import { AboutComponent } from './components/about/about.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { FoodCardComponent } from './components/food-card/food-card.component';
+import { BookingComponent } from './components/booking/booking.component';
+import { TeamComponent } from './components/team/team.component';
+import { ChefCardComponent } from './components/chef-card/chef-card.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -33,13 +34,15 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     TeamComponent,
     ChefCardComponent,
     TestimonialsComponent,
-    TestimonialCardComponent
+    TestimonialCardComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

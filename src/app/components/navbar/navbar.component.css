@@ -1,10 +1,54 @@
+.container {
+    height: 400px;
+    width: 74.9%;
+    background: linear-gradient(rgba(27, 27, 47, 0.85), rgba(27, 27, 47, 0.85)), url("/assets/img/bg-hero.jpg") center/cover no-repeat;
+}
+
 .navbar {
     display: flex;
+    height: 80px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
-    background-color: #1b1b2f;
     color: #ffa500;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.header-section {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-navbar {
+    height: 200px;
+    width: 100%;
+}
+
+.title-container {
+    height: 320px;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.path {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+
 }
 
 .logo {
@@ -12,6 +56,7 @@
     font-weight: bold;
     display: flex;
     align-items: center;
+    padding-left: 30px;
 }
 
 .icon {
@@ -23,6 +68,7 @@
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    padding-right: 60px;
 }
 
 .nav-links li a {
@@ -40,7 +86,7 @@
 
 .cta {
     background-color: #ffa500;
-    color: #1b1b2f;
+    color: white;
     border: none;
     padding: 15px 30px;
     font-size: 1rem;
@@ -61,4 +107,8 @@
 
 .cta button:hover {
     background-color: #ffc046;
+}
+
+.active {
+    color: #ffc046;
 }
