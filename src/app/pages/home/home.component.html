@@ -1,29 +1,49 @@
-<nav class="navbar">
-    <div class="logo">
-        <span class="icon">&#x1F374;</span> Restoran
-    </div>
-    <ul class="nav-links">
-        <div class="links">
-            <li *ngFor="let item of data">
-                <a [routerLink]="['/', item.path]"
-                    routerLinkActive="active">{{item.label}}</a>
-            </li>
-        </div>
-        <li>
-            <button class="cta">Book a Table</button>
-        </li>
-    </ul>
+<section class="header-section">
+    <div class="container-section-navbar">
+        <div class="container-navbar">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fa-solid fa-utensils icon"></i> Restoran
+                </div>
+                <ul class="nav-links">
+                    <div class="links">
+                        <li *ngFor="let item of data">
+                            <a [routerLink]="['/', item.path]"
+                                routerLinkActive="active">{{item.label | uppercase}}</a>
+                        </li>
+                        <li (click)="toggleDropdown()"
+                            class="list-item">
+                            <a>PAGES <i class="fa-solid fa-caret-down"></i></a>
+                        </li>
+                        <ul *ngIf="dropdownVisible"
+                            class="dropdown-menu">
+                            <li routerLink="/booking"
+                                routerLinkActive="active"><span class="dropdown-text">Booking</span></li>
+                            <li class="dropdown-text"
+                                routerLink="/team"
+                                routerLinkActive="active"><span class="dropdown-text">Our
+                                    Team</span></li>
+                            <li class="dropdown-text"
+                                routerLink="/testimonial"
+                                routerLinkActive="active"><span class="dropdown-text">Testimonial</span></li>
+                        </ul>
 
-</nav>
-<div class="home">
-    <div class="container">
+                    </div>
+                    <li>
+                        <button class="cta">Book a Table</button>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
         <div class="container-hero">
             <section class="hero-section">
                 <div class="hero-content">
                     <h1>Enjoy Our Delicious Meal</h1>
                     <p>
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                        diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore
+                        diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+                        dolore
                         erat
                         amet.
                     </p>
@@ -35,12 +55,11 @@
                 </div>
             </section>
         </div>
-        <!-- <section class="services-section">
-            <app-service *ngFor="let service of services"
-                [title]="service.title"
-                [description]="service.description"
-                [icon]="service.icon"></app-service>
-        </section> -->
+    </div>
+
+</section>
+<div class="home">
+    <div class="container">
         <app-services></app-services>
         <app-about></app-about>
         <app-menu></app-menu>

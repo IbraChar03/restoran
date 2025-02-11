@@ -23,7 +23,9 @@ import { ServicePageComponent } from './pages/service-page/service-page.componen
 import { ServicesComponent } from './components/services/services.component';
 import { MenuPageComponent } from './pages/menu-page/menu-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
-import { BookingPageComponent } from './booking-page/booking-page.component';
+import { BookingPageComponent } from './pages/booking-page/booking-page.component';
+import { TestimonialPageComponent } from './pages/testimonial-page/testimonial-page.component';
+import { TeamPageComponent } from './pages/team-page/team-page.component';
 
 @NgModule({
   declarations: [
@@ -40,12 +42,14 @@ import { BookingPageComponent } from './booking-page/booking-page.component';
     ChefCardComponent,
     TestimonialsComponent,
     TestimonialCardComponent,
+    TestimonialPageComponent,
     AboutPageComponent,
     ServicePageComponent,
     ServicesComponent,
     MenuPageComponent,
     ContactPageComponent,
-    BookingPageComponent
+    BookingPageComponent,
+    TeamPageComponent
   ],
   imports: [
     BrowserModule,

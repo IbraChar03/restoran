@@ -13,20 +13,20 @@
                                                 </li>
                                                 <li (click)="toggleDropdown()"
                                                         class="list-item">
-                                                        <a>PAGES</a>
+                                                        <a>PAGES <i class="fa-solid fa-caret-down"></i></a>
                                                 </li>
                                                 <ul *ngIf="dropdownVisible"
                                                         class="dropdown-menu">
-                                                        <li routerLink="booking"
+                                                        <li routerLink="/booking"
                                                                 routerLinkActive="active"><span
                                                                         class="dropdown-text">Booking</span></li>
                                                         <li class="dropdown-text"
-                                                                routerLink="team"
+                                                                routerLink="/team"
                                                                 routerLinkActive="active"><span
                                                                         class="dropdown-text">Our
                                                                         Team</span></li>
                                                         <li class="dropdown-text"
-                                                                routerLink="testimonial"
+                                                                routerLink="/testimonial"
                                                                 routerLinkActive="active"><span
                                                                         class="dropdown-text">Testimonial</span></li>
                                                 </ul>

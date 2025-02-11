@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./booking-page.component.css']
 })
 export class BookingPageComponent {
-
+  title: string = "Booking";
+  path: string = "BOOKING";
 }

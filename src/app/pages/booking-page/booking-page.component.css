@@ -1,0 +1,12 @@
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f8ff;
+}
+
+.container {
+    width: 75%;
+    height: 100%;
+    background-color: white;
+}

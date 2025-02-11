@@ -26,4 +26,10 @@ export class HomeComponent {
     });
   }
 
+  dropdownVisible: boolean = false;
+
+  toggleDropdown() {
+    this.dropdownVisible = !this.dropdownVisible;
+  }
+
 }

@@ -5,7 +5,7 @@
     height: 700px;
     justify-content: space-between;
     padding: 4rem 2rem;
-    background: linear-gradient(rgba(27, 27, 47, 0.85), rgba(27, 27, 47, 0.85)), url("/assets/img/bg-hero.jpg") center/cover no-repeat;
+    /* background: linear-gradient(rgba(27, 27, 47, 0.85), rgba(27, 27, 47, 0.85)), url("/assets/img/bg-hero.jpg") center/cover no-repeat; */
     color: white;
 }
 
@@ -20,6 +20,13 @@
     width: 75%;
     height: 100%;
     background-color: white;
+}
+
+.container-section-navbar {
+    width: 75%;
+    height: 100%;
+    background-color: white;
+    background: linear-gradient(rgba(27, 27, 47, 0.85), rgba(27, 27, 47, 0.85)), url("/assets/img/bg-hero.jpg") center/cover no-repeat;
 }
 
 .container-hero {
@@ -97,29 +104,72 @@
 
 .navbar {
     display: flex;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
-    background-color: #1b1b2f;
+    color: #ffa500;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background: linear-gradient(rgba(27, 27, 47, 0.85), rgba(27, 27, 47, 0.85)), url("/assets/img/bg-hero.jpg") center/cover no-repeat; */
+}
+
+
+.header-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f8ff;
+}
+
+span {
     color: #ffa500;
 }
 
+.container-navbar {
+    width: 100%;
+}
+
+.title-container {
+    height: 320px;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.path {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+
+}
+
 .logo {
-    font-size: 1.5rem;
+    font-size: 45px;
     font-weight: bold;
     display: flex;
     align-items: center;
+    padding-left: 30px;
 }
 
 .icon {
-    font-size: 1.8rem;
-    margin-right: 0.5rem;
+    font-size: 50px;
+    margin-right: 15px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    padding-right: 60px;
 }
 
 .nav-links li a {
@@ -137,7 +187,7 @@
 
 .cta {
     background-color: #ffa500;
-    color: #1b1b2f;
+    color: white;
     border: none;
     padding: 15px 30px;
     font-size: 1rem;
@@ -152,7 +202,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
-    width: 400px;
+    width: 500px;
 
 }
 
@@ -162,4 +212,43 @@
 
 .active {
     color: #ffc046;
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    z-index: 1000;
+}
+
+.list-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #eeeeee;
+}
+
+.dropdown-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: black;
+
+}
+
+.img-background {
+    background: linear-gradient(rgba(27, 27, 47, 0.85), rgba(27, 27, 47, 0.85)), url("/assets/img/bg-hero.jpg") center/cover no-repeat;
+
 }
