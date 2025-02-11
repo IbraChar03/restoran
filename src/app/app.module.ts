@@ -19,6 +19,11 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ServicePageComponent } from './pages/service-page/service-page.component';
+import { ServicesComponent } from './components/services/services.component';
+import { MenuPageComponent } from './pages/menu-page/menu-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { BookingPageComponent } from './booking-page/booking-page.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     ChefCardComponent,
     TestimonialsComponent,
     TestimonialCardComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    ServicePageComponent,
+    ServicesComponent,
+    MenuPageComponent,
+    ContactPageComponent,
+    BookingPageComponent
   ],
   imports: [
     BrowserModule,

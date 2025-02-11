@@ -27,6 +27,7 @@
     height: 600px;
     display: flex;
     justify-content: center;
+    margin-bottom: 270px;
 }
 
 .hero-content {

@@ -1,0 +1,55 @@
+.services-list {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permette il ritorno a capo */
+    padding-bottom: 80px;
+    justify-content: space-between;
+    gap: 20px;
+    /* Aggiunge spazio tra gli elementi */
+}
+
+.services-list app-service {
+    width: calc(25% - 15px);
+    /* Ogni elemento occupa il 25% meno lo spazio del gap */
+    max-width: 25%;
+    /* Assicura che non superi il 25% */
+}
+
+.services-section {
+    width: 100%;
+}
+
+.title-services {
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.explore {
+    color: #0d152a;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.orange {
+    color: orange;
+    font-size: 22px;
+}
+
+.reservation-title {
+    color: orange;
+    font-style: italic;
+    font-size: 1.2rem;
+    gap: 10px;
+}
+
+span {
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+    display: inline-block;
+    margin-bottom: 5px;
+}

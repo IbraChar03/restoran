@@ -9,8 +9,28 @@
                                         <div class="links">
                                                 <li *ngFor="let item of data">
                                                         <a [routerLink]="['/', item.path]"
-                                                                routerLinkActive="active">{{item.label}}</a>
+                                                                routerLinkActive="active">{{item.label | uppercase}}</a>
                                                 </li>
+                                                <li (click)="toggleDropdown()"
+                                                        class="list-item">
+                                                        <a>PAGES</a>
+                                                </li>
+                                                <ul *ngIf="dropdownVisible"
+                                                        class="dropdown-menu">
+                                                        <li routerLink="booking"
+                                                                routerLinkActive="active"><span
+                                                                        class="dropdown-text">Booking</span></li>
+                                                        <li class="dropdown-text"
+                                                                routerLink="team"
+                                                                routerLinkActive="active"><span
+                                                                        class="dropdown-text">Our
+                                                                        Team</span></li>
+                                                        <li class="dropdown-text"
+                                                                routerLink="testimonial"
+                                                                routerLinkActive="active"><span
+                                                                        class="dropdown-text">Testimonial</span></li>
+                                                </ul>
+
                                         </div>
                                         <li>
                                                 <button class="cta">Book a Table</button>
@@ -20,7 +40,7 @@
                         </nav>
                         <div class="title-container">
                                 <div class="title">{{pageTitle}}</div>
-                                <div class="path">Home / Pages / {{pagePath}}</div>
+                                <div class="path"> <span>HOME</span> / <span>PAGES</span> / {{pagePath}}</div>
                         </div>
                 </div>
         </div>

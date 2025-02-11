@@ -22,6 +22,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f1f8ff;
+}
+
+span {
+    color: #ffa500;
 }
 
 .container-navbar {
@@ -52,7 +57,7 @@
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 45px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -60,8 +65,8 @@
 }
 
 .icon {
-    font-size: 1.8rem;
-    margin-right: 0.5rem;
+    font-size: 50px;
+    margin-right: 15px;
 }
 
 .nav-links {
@@ -101,7 +106,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
-    width: 400px;
+    width: 500px;
 
 }
 
@@ -111,4 +116,38 @@
 
 .active {
     color: #ffc046;
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    z-index: 1000;
+}
+
+.list-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #eeeeee;
+}
+
+.dropdown-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: black;
+
 }

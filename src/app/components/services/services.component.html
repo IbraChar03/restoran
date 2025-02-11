@@ -1,0 +1,12 @@
+<section class="services-section">
+    <div class="title-services">
+        <div class="orange"><span></span> Our Services <span></span></div>
+        <div class="explore">Explore Our Services</div>
+    </div>
+    <div class="services-list">
+        <app-service *ngFor="let service of services"
+            [title]="service.title"
+            [description]="service.description"
+            [icon]="service.icon"></app-service>
+    </div>
+</section>

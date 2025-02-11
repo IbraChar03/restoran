@@ -24,4 +24,9 @@ export class NavbarComponent {
       }
     });
   }
+  dropdownVisible: boolean = false;
+
+  toggleDropdown() {
+    this.dropdownVisible = !this.dropdownVisible;
+  }
 }
