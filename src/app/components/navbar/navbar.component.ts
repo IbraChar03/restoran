@@ -20,7 +20,6 @@ export class NavbarComponent {
     this.service.getData().subscribe({
       next: (response) => {
         this.data = response.headerItems;
-        console.log(response.headerItems);
       },
       error: (err) => {
         console.error('error', err);

@@ -7,9 +7,16 @@ import { Chef } from 'src/app/services/team.service';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent {
-  chefs: Chef[] = [];
+  chefs: any;
   constructor(private teamService: TeamService) { }
   ngOnInit(): void {
-    this.chefs = this.teamService.getTeamList();
+    this.teamService.getData().subscribe(
+      (data) => {
+        this.chefs = data;
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }
 }

@@ -1,9 +1,5 @@
 import { Component, Input } from '@angular/core';
-interface Chef {
-  name: string;
-  designation: string;
-  imageUrl: string;
-}
+
 
 @Component({
   selector: 'app-chef-card',
@@ -11,5 +7,7 @@ interface Chef {
   styleUrls: ['./chef-card.component.css']
 })
 export class ChefCardComponent {
-  @Input() chef!: Chef;
+  @Input() name: string = "";
+  @Input() image: string = "";
+  @Input() designation: string = "";
 }

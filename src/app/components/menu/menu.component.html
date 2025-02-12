@@ -7,22 +7,36 @@
 
     <div class="menu-tabs">
         <div class="tab">
-            <i class="fas fa-coffee"></i> Popular Breakfast
+            <div>
+                <i class="fas fa-coffee"></i>
+            </div>
+            <div>
+                Popular <br> <span style="font-weight: bold;">Breakfast</span>
+            </div>
         </div>
         <div class="tab">
-            <i class="fas fa-hamburger"></i> Special Launch
+            <div>
+                <i class="fa-solid fa-burger"></i>
+            </div>
+            <div>
+                Special <br><span style="font-weight: bold;">Launch</span>
+            </div>
         </div>
         <div class="tab">
-            <i class="fas fa-utensils"></i> Lovely Dinner
+            <div>
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div>
+                Lovely <br> <span style="font-weight: bold;">Dinner</span>
+            </div>
         </div>
     </div>
 
     <div class="menu-grid">
-        <app-food-card> </app-food-card>
-        <app-food-card> </app-food-card>
-        <app-food-card> </app-food-card>
-        <app-food-card> </app-food-card>
-        <app-food-card> </app-food-card>
-        <app-food-card> </app-food-card>
+        <app-food-card *ngFor="let item of menu"
+            [name]="item.name"
+            [description]="item.description"
+            [price]="item.price"
+            [image]="item.image"> </app-food-card>
     </div>
 </section>

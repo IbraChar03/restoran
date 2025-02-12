@@ -4,6 +4,8 @@
 
     <div class="chef-grid">
         <app-chef-card *ngFor="let chef of chefs"
-            [chef]="chef"></app-chef-card>
+            [name]="chef.name"
+            [image]="chef.image"
+            [designation]="chef.designation"></app-chef-card>
     </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestimonialService } from 'src/app/services/testimonial.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class TestimonialsComponent {
   currentIndex: number = 0;
+  testimonials!: any;
+  cardsToShow = 3;
+
+  constructor(private testimonialService: TestimonialService) { }
+
   cards: { title: string, description: string }[] = [
     { title: 'Card 1', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' },
     { title: 'Card 2', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' },
@@ -17,7 +23,16 @@ export class TestimonialsComponent {
     { title: 'Card 7', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' }
   ];
 
-  cardsToShow = 3;
+  ngOnInit(): void {
+    this.testimonialService.getData().subscribe(
+      (data) => {
+        this.testimonials = data;
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  }
 
   nextCards() {
     if (this.currentIndex + this.cardsToShow < this.cards.length) {

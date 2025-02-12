@@ -1,8 +1,8 @@
 <div class="menu-item">
-    <img src="/assets/img/hero.png" />
+    <img [src]="image" />
     <div class="menu-details">
-        <h4>title</h4>
-        <p>test desc</p>
+        <h4>{{name}}</h4>
+        <p>{{description}}</p>
     </div>
-    <div class="menu-price">$112</div>
+    <div class="menu-price">${{price}}</div>
 </div>
