@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Service, ServiceListService } from '../../services/service-list.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { SettingsService } from '../../services/settings.service';
@@ -10,6 +10,7 @@ import { SettingsService } from '../../services/settings.service';
 export class HomeComponent {
   services: Service[] = [];
   data: any;
+  isScrolled: boolean = false;
 
   constructor(private serviceListService: ServiceListService, private service: SettingsService) { }
 
@@ -30,6 +31,10 @@ export class HomeComponent {
 
   toggleDropdown() {
     this.dropdownVisible = !this.dropdownVisible;
+  }
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 50;
   }
 
 }

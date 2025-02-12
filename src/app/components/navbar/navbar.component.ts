@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { SettingsService } from '../../services/settings.service';
 
 @Component({
@@ -10,6 +10,9 @@ export class NavbarComponent {
   @Input() pageTitle: string = "";
   @Input() pagePath: string = "";
   data: any;
+  isScrolled: boolean = false;
+  dropdownVisible: boolean = false;
+
 
   constructor(private service: SettingsService) { }
 
@@ -24,9 +27,12 @@ export class NavbarComponent {
       }
     });
   }
-  dropdownVisible: boolean = false;
 
   toggleDropdown() {
     this.dropdownVisible = !this.dropdownVisible;
+  }
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 50;
   }
 }

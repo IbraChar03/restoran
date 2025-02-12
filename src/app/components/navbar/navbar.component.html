@@ -1,7 +1,9 @@
 <section class="header-section">
         <div class="container">
                 <div class="container-navbar">
-                        <nav class="navbar">
+                        <nav class="navbar"
+                                id="navbar"
+                                [ngClass]="{'scrolled': isScrolled}">
                                 <div class="logo">
                                         <i class="fa-solid fa-utensils icon"></i> Restoran
                                 </div>

@@ -7,12 +7,25 @@
 .navbar {
     display: flex;
     height: 80px;
-    width: 100%;
+    width: 1425px;
     justify-content: space-between;
     align-items: center;
     color: #ffa500;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: fixed;
+    top: 0%;
+    background: transparent;
+    transition: background 0.3s ease-in-out, padding 0.3s;
+}
+
+
+.navbar.scrolled {
+    width: 100%;
+    background: #0f172a;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -38,6 +51,7 @@ span {
     height: 320px;
     width: 100%;
     text-align: center;
+    margin-top: 70px;
 }
 
 .title {
