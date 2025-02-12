@@ -26,6 +26,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { BookingPageComponent } from './pages/booking-page/booking-page.component';
 import { TestimonialPageComponent } from './pages/testimonial-page/testimonial-page.component';
 import { TeamPageComponent } from './pages/team-page/team-page.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { TeamPageComponent } from './pages/team-page/team-page.component';
     MenuPageComponent,
     ContactPageComponent,
     BookingPageComponent,
-    TeamPageComponent
+    TeamPageComponent,
+    ContactCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,31 @@
+.card {
+    width: 200px;
+    height: 70px;
+}
+
+.contact-name {
+    height: 50%;
+    width: 100%;
+    color: orange;
+    font-size: 20px;
+}
+
+span {
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+i {
+    color: orange;
+    font-size: 15px;
+}
+
+.email {
+    color: #696969;
+    font-size: 18px;
+}

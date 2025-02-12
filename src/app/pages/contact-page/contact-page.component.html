@@ -2,6 +2,39 @@
     [pagePath]="path"></app-navbar>
 <div class="home">
     <div class="container">
+        <div class="contact-title">
+            <div class="contact-us"><span></span>Contact Us <span></span></div>
+            <div class="query">Contact For Any Query</div>
+        </div>
+        <div class="contact-emails">
+            <app-contact-card *ngFor="let contact of contacts"
+                [name]="contact.name"
+                [email]="contact.email"></app-contact-card>
+        </div>
+        <section class="contact">
+            <div class="map">
+                <div id="map"></div>
+            </div>
+            <div class="form">
+                <div class="contact-form">
+                    <div class="name-email">
+                        <input type="text"
+                            placeholder="Your Name"
+                            class="input-field flex-input margin">
+                        <input type="email"
+                            placeholder="Your Email"
+                            class="input-field flex-input">
+                    </div>
+
+                    <input type="text"
+                        placeholder="Subject"
+                        class="input-field">
+                    <textarea placeholder="Message"
+                        class="textarea-field"></textarea>
+                    <button class="send-button">SEND MESSAGE</button>
+                </div>
+            </div>
+        </section>
         <app-footer></app-footer>
     </div>
 </div>

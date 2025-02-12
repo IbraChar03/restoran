@@ -1,7 +1,7 @@
 .container {
     height: 400px;
     width: 74.9%;
-    background: linear-gradient(rgba(27, 27, 47, 0.85), rgba(27, 27, 47, 0.85)), url("/assets/img/bg-hero.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(27, 27, 47, 0.95), rgba(27, 27, 47, 0.95)), url("/assets/img/bg-hero.jpg") center/cover no-repeat;
 }
 
 .navbar {
