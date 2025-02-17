@@ -146,6 +146,19 @@ span {
     z-index: 1000;
 }
 
+.dropdown-menu-scrolled {
+    list-style-type: none;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    z-index: 1000;
+}
+
 .list-item {
     position: relative;
     cursor: pointer;
