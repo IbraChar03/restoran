@@ -27,6 +27,7 @@ import { BookingPageComponent } from './pages/booking-page/booking-page.componen
 import { TestimonialPageComponent } from './pages/testimonial-page/testimonial-page.component';
 import { TeamPageComponent } from './pages/team-page/team-page.component';
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { ContactCardComponent } from './components/contact-card/contact-card.com
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

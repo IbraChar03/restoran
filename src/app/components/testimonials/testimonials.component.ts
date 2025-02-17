@@ -8,25 +8,16 @@ import { TestimonialService } from 'src/app/services/testimonial.service';
 })
 export class TestimonialsComponent {
   currentIndex: number = 0;
-  testimonials!: any;
+  testimonials: any[] = [];
   cardsToShow = 3;
 
   constructor(private testimonialService: TestimonialService) { }
-
-  cards: { title: string, description: string }[] = [
-    { title: 'Card 1', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' },
-    { title: 'Card 2', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' },
-    { title: 'Card 3', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' },
-    { title: 'Card 4', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' },
-    { title: 'Card 5', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' },
-    { title: 'Card 6', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' },
-    { title: 'Card 7', description: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam' }
-  ];
 
   ngOnInit(): void {
     this.testimonialService.getData().subscribe(
       (data) => {
         this.testimonials = data;
+        console.log(this.testimonials);
       },
       (error) => {
         console.error(error);
@@ -34,23 +25,8 @@ export class TestimonialsComponent {
     );
   }
 
-  nextCards() {
-    if (this.currentIndex + this.cardsToShow < this.cards.length) {
-      this.currentIndex += this.cardsToShow;
-    } else {
-      this.currentIndex = 0;
-    }
-  }
   getActiveDotIndex() {
     return Math.floor(this.currentIndex / this.cardsToShow);
-  }
-
-  prevCards() {
-    if (this.currentIndex - this.cardsToShow >= 0) {
-      this.currentIndex -= this.cardsToShow;
-    } else {
-      this.currentIndex = Math.floor(this.cards.length / this.cardsToShow) * this.cardsToShow;  // Vai alla fine
-    }
   }
 
   goToCards(index: number) {
@@ -60,10 +36,10 @@ export class TestimonialsComponent {
   }
 
   getVisibleCards() {
-    return this.cards.slice(this.currentIndex, this.currentIndex + this.cardsToShow);
+    return this.testimonials.slice(this.currentIndex, this.currentIndex + this.cardsToShow);
   }
 
   getDotsCount() {
-    return Math.ceil(this.cards.length / this.cardsToShow);
+    return Math.ceil(this.testimonials.length / this.cardsToShow);
   }
 }

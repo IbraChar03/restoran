@@ -8,15 +8,18 @@
 
     <div class="carousel-cards">
         <app-testimonial-card *ngFor="let card of getVisibleCards()"
-            [title]="card.title"
-            [description]="card.description"></app-testimonial-card>
+            [name]="card.name"
+            [job]="card.job"
+            [image]="card.image"
+            [text]="card.text"></app-testimonial-card>
     </div>
-
-    <div class="dots">
-        <span *ngFor="let dot of [].constructor(getDotsCount()); let i = index"
-            [class.active]="i === getActiveDotIndex()"
-            (click)="goToCards(i)"
-            class="dot"></span>
+    <div *ngIf="testimonials.length > 0">
+        <div class="dots">
+            <span *ngFor="let dot of [].constructor(getDotsCount()); let i = index"
+                [class.active]="i === getActiveDotIndex()"
+                (click)="goToCards(i)"
+                class="dot"></span>
+        </div>
     </div>
 
 </section>

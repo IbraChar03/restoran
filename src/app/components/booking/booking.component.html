@@ -10,28 +10,43 @@
             <h3 class="reservation-title">Reservation <span></span></h3>
             <h2 class="main-title">Book A Table Online</h2>
 
-            <form>
+            <form (ngSubmit)="onSubmit()">
                 <div class="input-group">
                     <input type="text"
-                        placeholder="Your Name">
+                        placeholder="Your Name"
+                        [(ngModel)]="booking.name"
+                        name="name"
+                        required>
                     <input type="email"
-                        placeholder="Your Email">
+                        placeholder="Your Email"
+                        [(ngModel)]="booking.email"
+                        name="email"
+                        required>
                 </div>
                 <div class="input-group">
                     <input type="datetime-local"
-                        placeholder="Date & Time">
-                    <select>
-                        <option>No Of People</option>
-                        <option>People 1</option>
-                        <option>People 2</option>
-                        <option>People 3</option>
-                        <option>People 4</option>
+                        placeholder="Date & Time"
+                        [(ngModel)]="booking.date"
+                        name="dateTime"
+                        required>
+                    <select [(ngModel)]="booking.numberOfPeople"
+                        (ngModelChange)="convertToNumber($event)"
+                        name="people"
+                        required>
+                        <option [value]="null"
+                            disabled
+                            selected>No Of People</option>
+                        <option [value]="1">People 1</option>
+                        <option [value]="2">People 2</option>
+                        <option [value]="3">People 3</option>
+                        <option [value]="4">People 4</option>
                     </select>
                 </div>
-                <textarea placeholder="Special Request"></textarea>
+                <textarea placeholder="Special Request"
+                    [(ngModel)]="booking.notes"
+                    name="request"></textarea>
                 <button type="submit">BOOK NOW</button>
             </form>
         </div>
     </div>
-
 </section>

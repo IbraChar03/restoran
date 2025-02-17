@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./testimonial-card.component.css']
 })
 export class TestimonialCardComponent {
-  @Input() title: string = '';
-  @Input() description: string = '';
+  @Input() name: string = '';
+  @Input() text: string = '';
+  @Input() job: string = '';
+  @Input() image: string = '';
 }
