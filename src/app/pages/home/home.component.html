@@ -18,7 +18,7 @@
                             <a>PAGES <i class="fa-solid fa-caret-down"></i></a>
                         </li>
                         <ul *ngIf="dropdownVisible"
-                            class="dropdown-menu">
+                            [ngClass]="isScrolled ? 'dropdown-menu-scrolled' : 'dropdown-menu' ">
                             <li routerLink="/booking"
                                 routerLinkActive="active"><span class="dropdown-text">Booking</span></li>
                             <li class="dropdown-text"
