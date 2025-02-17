@@ -6,6 +6,23 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+.service-card:hover {
+    background-color: orange;
+}
+
+.service-card:hover .image i {
+    color: white;
+}
+
+.service-card:hover .title {
+    color: white;
+}
+
+.service-card:hover .desc {
+    color: white;
+}
+
+
 
 .image {
     height: 35%;
