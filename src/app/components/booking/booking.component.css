@@ -63,9 +63,9 @@
 
 .reservation-title {
     color: orange;
-    font-style: italic;
     font-size: 1.2rem;
     gap: 10px;
+    font-family: 'Pacifico', cursive;
 }
 
 .reservation-title span {
